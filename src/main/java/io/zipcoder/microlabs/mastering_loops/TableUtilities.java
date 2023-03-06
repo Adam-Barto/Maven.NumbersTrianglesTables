@@ -6,7 +6,6 @@ public class TableUtilities {
         int i = 1;
         StringBuilder line = new StringBuilder();
             while (i <= size){
-                ;
                 line.append(String.format("%5s", (n * i) + " |"));
                 i = i+1;
              }

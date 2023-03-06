@@ -26,27 +26,15 @@ public class NumberUtilities {
 
 
     public static String getSquareNumbers(int start, int stop, int step) {
-        StringBuilder list = new StringBuilder();
-        for(int i = start; i < stop; i=(i+step)){
-                list.append((int)Math.pow(i,2));
-        }
-        return list.toString();
+        return getExponentiations(start,stop,step,2);
     }
 
     public static String getRange(int start) {
-        StringBuilder list = new StringBuilder();
-        for(int i = 0; i < start; i++){
-                list.append(i);
-        }
-        return list.toString();
+        return getRange(0,start,1);
     }
 
     public static String getRange(int start, int stop) {
-        StringBuilder list = new StringBuilder();
-        for(int i = start; i < stop; i++){
-            list.append(i);
-        }
-        return list.toString();
+        return getRange(start,stop,1);
     }
 
 
